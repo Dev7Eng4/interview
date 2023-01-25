@@ -1,0 +1,118 @@
+
+HTML
+webpage layout structure
+
+link tag and script tag
+
+href and target attributes of <a> element
+
+Image responsive
+
+iframe
+
+SVG
+
+
+canvas
+
+SEO
+
+
+CSS selectors
+
+CSS priority
+
+border, padding, margin, width, height, color, background
+
+display
+
+position
+
+font
+
+pseudo (::hover, ::before, ::after ...)
+
+CSS unit (px, pt, em, rem ...)
+
+media query
+
+display flex
+
+display grid
+
+CSS variable
+
+calc()
+
+transform
+
+CSS animation
+
+CSS preprocessor (SASS, LESS)
+
+CSS library (Bootstrap, Tailwind)
+
+BEM
+
+JS
+js type
+
+== vs ===
+
+let, const, var
+
+null, undefined
+
+js scope, this
+
+arrow function
+
+array’s function (forEach, map, filter, push...)
+
+setTimeout, setInterval
+
+event listener
+
+event bubbling, stopPropagation, preventDefault
+
+DOM and DOM manipulation
+
+JS data is passed by value or by reference
+
+session storage, local storage, cookie
+
+promise
+
+async, await
+
+ES6 features (Object destructuring, spread operator )
+
+CORS
+
+REST API
+
+single thread, call stack
+
+animation frame, fps
+
+
+Others
+NPM
+
+GIT
+
+CI-CD
+
+Agile scrum
+
+
+
+- những dự án đầu là thời gian e mới bắt đầu vào nghề nên chỉ tập trung code
+cho sản phẩm chạy được là được
+- dự án vethero là dự án lớn và mọi người trong lúc code cũng yêu cầu cao
+về performance, clean code, nhờ đó mà e học hỏi được rất nhiều về performance
+clean, refacoter, cách dùng thẻ đúng html (dùng strong chứ k dùng b, sematicss)
+cách dùng css để tối ưu (dùng transalte chứ k dùng possition), biết cách
+phải chia ra từng module nhỏ chứ ko bundle vào 1 file (load first time sẽ chậm,
+lazy load, dynamic immport), biết cách dùng webpack để config embed code
+

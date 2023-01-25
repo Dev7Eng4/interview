@@ -1,0 +1,109 @@
+- bảo mật html , cách ngăn chặn hack with innerHTML
+- structure theo future hay màn hình, ưu nhược điểm
+- khi gõ url rồi enter -> web hoạt động như nào
+- automation test in frontend
+- tại sao nên lưu login vào cookie mà k phải localstorage
+- section là gì
+
+useEffect -> nếu có dependenci -> sau khi state update ->  update ui -> in return run -> in useEffect run
+
+what is "state"?
+ups and downs of class and functional components
+what are component re-renderings and how do they work?
+how to trigger re-renderings
+different component lifecycles and how to interact with them
+Virtual DOM
+Benefits of CSR (Client Side Rendering) and SSR (Server Side Rendering) in general and in React
+Controlled vs. Uncontrolled Components
+State Lifting
+at least one global state management technology (Context API, Redux/Toolkit, Recoil)
+Component Patterns (especially how to choose the right pattern)
+- compound component pattern avoids unnecessary prop-drilling of many component levels	
+
+
+
+
+
+- usememo, usecallback khi nào dùng
+- localstorage, sessionstorage, cookies
+- useEffectSnipper
+- micro and macro
+- socket: có mấy cách kết nối socket từ client, tại sao dùng từng cách
+
+- 10 item in page, have like, comments  làm sao để ui ux khi call lấy 10 items sau đó lại call lấy comments, like của
+từng item
+ - promise, khi nào nên dùng promise hơn async await -> promise.all
+- lợi ích của typescript so với javascript
+- những cách tối ưu uiux performance
+ + don't overload the dom 
++ every component should be pure
++ every props should have reference equality
+
+
+- side effect
+- nên sử dụng translate hay là absolute -> nên dùng translate, absolute mỗi lần tăng hay giảm 1px thì browser sẽ vẽ
+lại
+
+- useReducer nên dùng khi có các state liên quan đến nhau: form có state của input, state loading, state validation
+
+- mutable and immutable
+
+- promise
+
+
+- nên sử dụng create-react-app không -> no because include too many dependence not nessesary -> increase size of 
+project -> load heavy
+- axios -> những setting với axios ngoại trừ instance, interceptor
+- sử dụng ... trong js khi nào, typeof của ...rest
+- có nên cho state vào dependence của useEffect không? vì sao
+- nếu be trả về 100000 items thì sẽ xử lý hiển thị ra sao (ko dùng thư viện)
+- xử lý số 0,1 + 0.2 = 0.3 -> chuyển qua string để xử lý
+dùng new Decimal để chuyển thành decimal sau đó getNumber
+- cách so sánh 2 object có object con : object.values -> đệ quy
+- xử lý khi form register chỉ có 2 ,3 input -> cách tạo componet xử lý state
+- xử lý khi ô input user input 001100 -> 11
+- xử lý số number lớn 
+
+- tại sao const object có thể thay đổi giá trị
+- formik và react-hook-form
++ react hook form: uncontrolled component -> performence tốt hơn
++ formik : khi change 1 Field -> re-render toàn bộ Formik -> nên phải dùng Fastfield
+- cơ chế của react-window react-visualited
+- config token trong axios trong interceptor
+
+compound component
+dangerouslySetInnerHTML
+
+- realtime
+- innerHTML chỉ thay đổi giá trị show trên ui chứ ko thay đổi value trong state
+- state làm dependence useEffect -> xử lý k tốt -> infiniti loop
+- mutable and unmmutable
+- key trong react: - nếu ko dùng key hoặc key là index: khi phân trang next trang thì list sẽ tự add thêm item -> sai
+hoặc lúc add event vào trong element trong map -> handle event sai
+
+
+- recoil
+- atomic
+- storybook and jest
+
+- with small form, if you don't need validate when change, you can use ref to input to limit re-render (uncontrol 
+component)
+
+- cách react build dom, build scss, styled-component, core nó chạy như nào
+- cache khi call api (fetch)
+- cách setState cập nhật ( trong hàm set state có hàm xử lý render -> nên khi setState thì component sẽ re-render, 
+còn update trực tiếp state thì không)
+- innerHTML thì không re-render khi value thay đổi
+- redux store state lưu trong ram -> đóng browser sẽ mất -> lưu local hay cookie
+- picture tag
+- es5 and es6
+- cách dom so sánh, thực hiện cập nhật như nào trong react, sử dụng thuật toán gì để kiểm tra
+- strict mode
+- sự khác nhau giữa catch in try/catch and catch in promise
+
+- pwa 
+- worker
+- git fetch - pull, merge - rebase, 
+- webpack, babel
+
+- how to handle khi 3 api call ma aceesstoken 401 can refresh truoc -> day 3 api vao queue, cho co new token roi call lai

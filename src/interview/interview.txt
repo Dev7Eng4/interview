@@ -1,0 +1,242 @@
+array.pop() xóa phần tử cuối trong mảng
+array.unshift() Thêm một phần tử vào vị trí đầu tiên của mảng, đồng thời đẩy các phẩn từ phía sau lên một bậc.
+array.slice() lấy 1 số phần tử con trong mảng
+array.push() để thêm các phần tử vào cuối mảng
+find() trả về giá trị đầu tiên trong mảng thỏa mãn đk 
+
+pwa
+
+Shallow Compare có thể hiểu là so sánh sử dụng ===
+
+Cách kết nối client với sever
+Kết nối với một API yêu cầu gán app của mình vào một API endpoint. Endpoint được kết nối với app sẽ gửi yêu cầu,trong khi endpoint được kết nối với API sẽ gửi lại cho bạn một phản hồi cụ thể.
+Endpoint là một URL yêu cầu và cung cấp cho client quyền truy cập trực tiếp vào các tài nguyên của một API (Thêm, sửa, xóa)
+
+
+<a href="www.hoclaptrinh.org">Trang chủ</a>
+<p onclick="parentEventHandler()">
+    <a href="www.hoclaptrinh.org">Trang chủ</a>
+</p>
+event.preventDefault() ngăn chặn cách xử lý mặc định của trình duyệt khi xảy ra sự kiện.(ngăn cản trình duyệt chuyển tiếp người dùng tới trang đích của link liên kết.)
+event.stopPropagation() Ngăn cản sự kiện lan toả tới phần tử cha là thẻ p
+return false: kết hợp cả event.preventDefault() và event.stopPropagation()
+
+Khác nhau giữa Undefined  và null
+Undefined có nghĩa là không xác định. khi bạn khai báo một biến nhưng chưa gán giá trị cho nó
+Null có nghĩa là giá trị rỗng hoặc giá trị không tồn tại, 
+null === undefined         // false
+null == undefined          // true
+
+hoisting là gì ?
+-hoisting cho phép các khai báo biến hoặc hàm được dời lên trên đầu phạm vi của chúng trước khi thực thi đoạn code.
+có nghĩa là bất kể hàm và biến được khai báo ở đâu, chúng đều được chuyển lên đầu , bất kể là toàn cục hay cục bộ.
+higher oder function và higher order component là gì?
+-Higher-order functions là các hàm lấy các hàm khác làm đối số hoặc trả về các hàm làm kết quả của chúng. Lấy một hàm khác làm đối số thường được gọi là hàm gọi lại
+
+-HOC (Higher Order Component)  là một component nhận đầu vào là một component và trả về là một component khác.
+
+closure là gì?
+-Closure được định nghĩa là một trong những hàm được viết lồng vào trong hàm khác. Nó được sử dụng để biến đổi toàn cục, biến cục bộ của chính nó.
+
+var let const khác gì nhau? Var là phạm vi  function (global scoped) còn let và const lại là block-scoped
+biến let có thể được cập nhật nhưng không thể khai báo lại;
+biến const không thể cập nhật nhưng không thể khai báo lại
+Trong khi var và let có thể được khai báo không khởi gán giá trị, const phải khởi gán giá trị khi khai báo.
+
+
+Funtional component khác gì class component ? 
+-Functional component là một component cơ bản, được định nghĩa bởi các props.
+-Class component thì phức tạp hơn , nó cung cấp thêm các phương thức về vòng đời và quản lý state của component.
+
+Virtual DOM là gì ?
+-được tạo sau khi render lại.
+-Clone từ DOM thật.
+-React sẽ sử dụng một quá trình được gọi là reconciliation (hoà hợp) – sử dụng một “diffing” thuật toán để so sánh và đối chiếu lại những thay đổi mục đích để biết được cập nhập nào đang diễn ra. React sau đấy chỉ cập nhập những phần tử đã thay đổi, bỏ qua những chỗ khác (không thay đổi)
+-Sử dụng thuật toán diffing để so sánh vs DOM thật rồi update lên DOM thật, giảm reflow vs repaint -> performent tốt.
+
+Check array như nào?	
+Array.isArray
+instanceof Array
+... có dùng cho mảng hay object ?
+... dùng cho cả mảng và object
+
+scope là gì có mấy loại scope ? 
+-Scope của 1 biến là phạm vi trong chương trình của bạn mà biến đó được định nghĩa.
+
+-Trong javascript có 3 loại scope:
+-Global scope: có phạm vị hoạt động ở bất kỳ trong mã javascript của bạn.
+-Function scope: có phạm vi hoạt động trong function mà bạn khai báo biến đó.
+-Block scope: có phạm vị trong cặp dấu {} mà bạn khai báo biến đó. (ES6)
+
+Keys trong React là gì ? 
+- giúp React xác định mục nào đã thay đổi, được thêm hoặc xóa.
+
+So sánh chuỗi 
+dùng JSON.stringify so sánh ===
+
+so sánh async await và promise ?
+-bản chất của async/await là sử dụng Promise ở bên dưới, việc cần làm của bạn đó chính là sử dụng 2 từ khóa async và await sao cho phù hợp: async sẽ được sử dụng trước hàm, còn await sẽ được sử dụng ở trước các thao tác cần đồng bộ. 
+-call nhiều api cùng lúc promise.all
+-Không bao giờ sử dụng async await cho hai hoặc nhiều tác vụ song song không đồng bộ độc lập vì sẽ không thể xử lý lỗi nghiêm trọng.
+nên sửn dụng promise all vì  nó sẽ trả về một promises mới mà chỉ resolve một khi tất cả các promise trên đã resolve. Nó tương đương với một vòng lặp for bất đồng bộ.
+- cách phòng tránh call back hell là sử dụng async-await
+
+arrow funtion khác gì function thường 
+-Arrow function sử dụng kí tự =>:
+-Arrow function thường ngắn gọn hơn function
+-Với hàm số có 1 tham số, arrow function có thể bỏ qua cặp dấu ngoặc đơn.
+- arrow function cũng có thể bỏ qua từ khoá return.
+-Arrow function không bind this
+-Arrow function không định nghĩa giá trị this của riêng nó giống như function.
+-Arrow function không bind arguments
+-Tương tự như đối với this, arrow function cũng không định nghĩa giá trị arguments của riêng nó.
+-Arrow function không thể sử dụng làm hàm constructor
+-Arrow function không có thuộc tính prototype
+-Arrow function không được hoisted
+-Về cơ bản, hoisting được hiểu là biến và hàm số được đưa lên đầu của phạm vi biến, hàm số trước khi đoạn code đó được thực hiện.
+-Arrow function không được hoisted: nghĩa là bạn phải định nghĩa arrow function trước khi sử dụng nó.
+
+tại sao arrow function k có this ? 
+-Khác với function thông thường, arrow function không có bind vì vậy, không định nghĩa lại this
+-bình thường this dùng để trỏ tới chính object gọi hàm đó => this bây giờ chính là đối tượng global
+
+Snapshot tests là gì ?
+-Snapshot tests là một công cụ rất  đảm bảo rằng UI không bị thay đổi ngoài ý muốn.
+-Trong react, snapshot testing là tạo ra 1 file snapshot dưới dạng một file serializable từ component, sau đó trong những lần test sau, các component sẽ tiếp tục tạo ra các rendered output khác để so sánh với file snapshot ban đầu, nếu có sự thay đổi thì kết quả test sẽ fail.
+
+quá trình render browser ?
+1 Từ dữ liệu HTML đã nhận từ server Browser tạo ra DOM (Document Object Model) .
+2 Styles được load và parsed (phân tích) để tạo ra CSSOM (CSS Object Model).
+3 Dựa trên DOM và CSSOM, browser dựng lên một rendering tree – là một tập các object sẽ được render 
+ Render tree có cấu trúc mô phỏng theo DOM và loại trừ các thành phần không được hiển thị (chẳng hạn thẻ hay các thành phần có style display:none)
+Mỗi đoạn text được biểu diễn như là một renderer tách biệt trong rendering tree. 
+Mỗi đối tượng render chứa một đối tượng DOM tương ứng (hoặc một đoạn text) cộng với styles đã tính toán. 
+Nói cách khác, render tree mô tả một biểu diễn hình ảnh của một DOM.
+Với mỗi thành phần render tree, các toạ độ tương ứng cũng được tính toán và được gọi là “layout”.
+4Cuối cùng, nội dung trang web được hiển thị lên màn hình, quá trình này gọi là “painting”.
+
+scss có gì tối ưu hơn css ? 
+scss thì nó cho phép tạo biến, tạo hàm sau nó complie ra css thuần .Giúp tiết kiệm code, dùng lại được, tối ưu hơn css
+
+so sánh flexbox và css grid ?
+- CSS Grid là hệ thống dựng layout 2 chiều, có nghĩa là chúng ta có thể xử lý theo cột và hàng, không giống như Flexbox là hệ thống layout 1 chiều. ( xử lý theo 1 cột hoặc 1 hàng ). Flexbox phù hợp với các website có layout đơn giản, CSS Grid phù hợp với website có layout phức tạp hơn.
+- Flexbox phù hợp với các website có layout đơn giản, CSS Grid phù hợp với website có layout phức tạp hơn.
+
+
+các hook sẽ chạy thứ tự như nào khi khai báo tất cả các hook?
+ ReactMemo sẽ gọi đầu tiên, sau đó đến useEffect, sau đó đến các useCallBack vs useMemo, sau tiếp là useState.
+
+life cylce cũ :
+-constructor => ComponentWillMount() => render => ComponentDidMount() =>   ShouldComponentUpdate() true => -ComponentWillUpdate() => render => ComponentDidUpdate()
+setState là hàm đồng bộ hay bất đồng bộ ? nó là bất đồng bộ vì nếu là đồng bộ thì mỗi khi setState sẽ render lại liên tục mà không thể thực hiện những logic phía sau 
+useEffect (componentDidUpdate,componentDidMount,componentUnWillMount)
+Được gọi sau render, vì nó là kiểu viết thay cho componentDidMount vs componentDidUpdate bên class
+Chỉ gọi 1 lần thì để depedencies rỗng
+Kiểm soát để không bị Infinite loops, truyền variable vào depedencies
+Nếu truyền 1, 2 vào depedencies thì bị ảnh hưởng gì  ko ? 
+k vẫn chỉ gọi 1 lần nhưng bị thừa depedencies
+Nếu ko có depedencies thì dễ bị infinite loop
+
+useMemo là gì  dùng khi nào ?
+-useMemo là hàm: lưu lại kết quả của hàm nào đó và những giá trị nào sẽ làm thay đổi kết quả đó,được sử dụng để chặn việc render không cần thiết giữa parent và children component
+
+có bao nhiêu hook? (10)
+
+React Memo  là gì?
+-React.Memo Là một Higher order component dùng để ghi nhớ kết quả của function component, 
+tất nhiên nếu truyền cùng một prop thì kết quả trả về sẽ là không đổi,
+nên có thể lấy kết quả đã nhớ trước đó
+float khác gì flex ?
+Thuộc tính float có tác dụng đẩy phần tử sang bên trái hoặc bên phải.
+flex có thể dàn hàng, căn bố cục theo chiều ngang, dọc...
+justify content center: căn giữa theo chiều ngang;
+align item center : căn giữa theo chiều dọc
+flex-direction: dàn theo dọc hoặc ngang
+
+có mấy loại position?
+-Static positioning và relative positioning
+-Static positoning chỉ có một giá trị: position: static. Nó là mặc định nên sẽ ít khi thấy nó được khai báo.
+-Relative positioning bao gồm các giá trị: relative, absolute, fixed
+
+quy tắc đặt tên class: BEM .block__element--modifier 
+framework hỗ trợ sever-side rendering hoặc server render side: nextjs 
+Mặc định là Server Side Rendering
+Tự động phân chia code để load trang nhanh hơn
+Client side routing rất đơn giản (với nền tảng là page)
+Hỗ trợ Webpack môi trường dev hỗ trợ Hot Module Replacement (HMR)
+Có thể cài đặt với Express hay bất cứ Node.js HTTP server nào
+Có thể customizable với Babel and Webpack configurations của bạn
+Initial load nhanh, dễ otpimize, vì toàn bộ dữ liệu đã được xử lý ở server. Client chỉ việc hiển thị.
+Các web framework từ xưa đến nay đều hỗ trợ cơ chế này
+Developer chỉ cần code 1 project web là được, không cần phải tách ra front-end và back-end
+SEO tốt vì khi bot của Google, Bing vào web sẽ thấy toàn bộ dữ liệu dưới dạng HTML.
+
+Reactjs là client side rendering ( tức là việc render HTML, CSS sẽ được thực hiện ở client (Tức JavaScript ở trình duyệt)
+Những logic đơn giản (validation, đọc dữ liệu, sorting, filtering) nằm ở client side
+Logic để routing (chuyển trang), render (hiển thị) dữ liệu thì 96.69% là nằm ở client side
+Logic phức tạp (thanh toán, phân quyền) hoặc cần xử lý nhiều (data processing, report) vẫn nằm ở server side.
+
+format margin code hay dùng : Space 2
+
+config Prettier :
+
+{
+  "bracketSpacing": true,
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
+  "arrowParens": "avoid",
+  "quoteProps": "consistent",
+  "endOfLine": "auto"
+}
+
+PUT khác gì PATCH 
+khi sử dụng PUT để update, ta phải gửi 1 bản ghi đầy đủ các field để yêu cầu cập nhật. Nếu chỉ gửi 1 số field nhất định thì những field còn lại sẽ bị xóa
+PATCH giống PUT về ý nghĩa nhưng khác nhau về cách làm việc, nó chỉ thay đổi những field được yêu cầu thay vì thay đổi toàn bộ record.
+ví dụ PUT:
+ {
+    "name": "Khá Bảnh",
+    "age": 25,
+    "skill": "xòe quạt"
+}
+payload :{
+    skill: "xòe quạt, vinahey"
+}
+
+Put thêm vinahey cho a Bảnh
+ response : {
+    "skill": "xòe quạt, vinahey"
+}
+
+Path nếu cùng payload như trên sẽ có 
+response :{
+    "name": "Khá Bảnh",
+    "age": 25,
+    "skill": "xòe quạt, vinahey"
+}
+
+Lí do boostrap chia màn thành 12 cột :
+Số 12 có các ước số là 1, 2, 3, 4, 6, 12, chia layout sẽ linh hoạt hơn
+vậy tại sao không phải là số to hơn? là số quá lớn. Nếu chia màn hình thành nhiều cột, thì mỗi cột sẽ rất bé,không thể trình bày nội dung 
+
+
+Dữ liệu được lưu trữ trong sessionStorage bị xóa khi nào?
+Khi người dùng đóng tab.
+
+Nếu sử dụng localStorage, dữ liệu sẽ ở đó mãi mãi, trừ khi localStorage.clear() được gọi.
+
+flow redux  action => (side effect nếu có) => dựa vào type action, reducer sẽ xử lý logic ở đây và update lại state => từ ui sử dụng getSelector để lấy state ra 
+
+Ngoài redux ra còn có cách nào để share dữ liệu không? context, mobx,zustand, recoil
+
+Em có biết thêm về thư viện hỗ trợ việc css hay xây dựng UI nào không(tailwind,bootsrap,charka-ui,material-ui,ant,reactstrap)
+
+Thunk: dispatch 1 thunk function => thunk chạy => thunk dispatch các action liên quan => reducer bắt được các action liên quan => lưu state vào store
+Saga :Ở Component phát đi một hành động đến Action , sau đó Action chuyển tiếp nó đến Saga thông qua một cái type có status là request.
+Tại Saga ứng với mỗi Action đó có 2 function:
+watchSaga : để bắt cái action có: type = request gửi đến từ action, (boss)
+workSaga: để thực thi Async-Action đó => sau khi có kết quả success or fail => se PUT một trạng thái tương ứng vào trong Reducer để update lại state.
+Và trong project sẽ có nhiều saga và tất cả các function watchSaga của saga sẽ được import vào trong một file gọi là rootSaga và được thực thi bằng lệnh: yield[watchSaga1, watchSaga2 , ...].
